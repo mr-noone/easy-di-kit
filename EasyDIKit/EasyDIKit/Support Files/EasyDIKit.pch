@@ -1,0 +1,14 @@
+//
+//  EasyDIKit.pch
+//  EasyDIKit
+//
+//  Created by Aleksey Zgurskiy on 17.11.2017.
+//  Copyright © 2017 Aleksey Zgurskiy. All rights reserved.
+//
+
+#ifndef EasyDIKit_pch
+#define EasyDIKit_pch
+
+#import "NSException+Additional.h"
+
+#endif /* EasyDIKit_pch */

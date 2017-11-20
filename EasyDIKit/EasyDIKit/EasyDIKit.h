@@ -10,3 +10,5 @@
 
 FOUNDATION_EXPORT double EasyDIKitVersionNumber;
 FOUNDATION_EXPORT const unsigned char EasyDIKitVersionString[];
+
+#import <EasyDIKit/DIMethod.h>

@@ -7,8 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1DA231E81FC2D7D100A0594F /* DIMethod.h in Headers */ = {isa = PBXBuildFile; fileRef = 1DA231E61FC2D7D100A0594F /* DIMethod.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1DA231E91FC2D7D100A0594F /* DIMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DA231E71FC2D7D100A0594F /* DIMethod.m */; };
+		1DA231EB1FC2D98300A0594F /* DIMethod+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 1DA231EA1FC2D98300A0594F /* DIMethod+Private.h */; };
+		1DA231ED1FC2DC5100A0594F /* DIMethodTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DA231EC1FC2DC5100A0594F /* DIMethodTests.m */; };
 		1DA43F0E1FBDC2DE0032D7C7 /* EasyDIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DA43F041FBDC2DE0032D7C7 /* EasyDIKit.framework */; };
 		1DA43F151FBDC2DE0032D7C7 /* EasyDIKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 1DA43F071FBDC2DE0032D7C7 /* EasyDIKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1DB445921FBEF2B200C93EC5 /* NSException+Additional.h in Headers */ = {isa = PBXBuildFile; fileRef = 1DB445901FBEF2B200C93EC5 /* NSException+Additional.h */; };
+		1DB445931FBEF2B200C93EC5 /* NSException+Additional.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DB445911FBEF2B200C93EC5 /* NSException+Additional.m */; };
+		1DB445971FBEF83600C93EC5 /* NSInvocation+Additional.h in Headers */ = {isa = PBXBuildFile; fileRef = 1DB445951FBEF83600C93EC5 /* NSInvocation+Additional.h */; };
+		1DB445981FBEF83600C93EC5 /* NSInvocation+Additional.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DB445961FBEF83600C93EC5 /* NSInvocation+Additional.m */; };
+		1DB4459B1FBEF87100C93EC5 /* NSInvocation+AdditionalTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DB4459A1FBEF87100C93EC5 /* NSInvocation+AdditionalTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -22,11 +31,21 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1DA231E61FC2D7D100A0594F /* DIMethod.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DIMethod.h; sourceTree = "<group>"; };
+		1DA231E71FC2D7D100A0594F /* DIMethod.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DIMethod.m; sourceTree = "<group>"; };
+		1DA231EA1FC2D98300A0594F /* DIMethod+Private.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DIMethod+Private.h"; sourceTree = "<group>"; };
+		1DA231EC1FC2DC5100A0594F /* DIMethodTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DIMethodTests.m; sourceTree = "<group>"; };
 		1DA43F041FBDC2DE0032D7C7 /* EasyDIKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = EasyDIKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DA43F071FBDC2DE0032D7C7 /* EasyDIKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EasyDIKit.h; sourceTree = "<group>"; };
 		1DA43F081FBDC2DE0032D7C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1DA43F0D1FBDC2DE0032D7C7 /* EasyDIKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EasyDIKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DA43F141FBDC2DE0032D7C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1DB445901FBEF2B200C93EC5 /* NSException+Additional.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSException+Additional.h"; sourceTree = "<group>"; };
+		1DB445911FBEF2B200C93EC5 /* NSException+Additional.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSException+Additional.m"; sourceTree = "<group>"; };
+		1DB445941FBEF5B000C93EC5 /* EasyDIKit.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EasyDIKit.pch; sourceTree = "<group>"; };
+		1DB445951FBEF83600C93EC5 /* NSInvocation+Additional.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSInvocation+Additional.h"; sourceTree = "<group>"; };
+		1DB445961FBEF83600C93EC5 /* NSInvocation+Additional.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSInvocation+Additional.m"; sourceTree = "<group>"; };
+		1DB4459A1FBEF87100C93EC5 /* NSInvocation+AdditionalTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSInvocation+AdditionalTests.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +90,10 @@
 			isa = PBXGroup;
 			children = (
 				1DA43F071FBDC2DE0032D7C7 /* EasyDIKit.h */,
+				1DA231EA1FC2D98300A0594F /* DIMethod+Private.h */,
+				1DA231E61FC2D7D100A0594F /* DIMethod.h */,
+				1DA231E71FC2D7D100A0594F /* DIMethod.m */,
+				1DB4458F1FBEF27F00C93EC5 /* Categories */,
 				1DBE070B1FBDC47900517F67 /* Support Files */,
 			);
 			path = EasyDIKit;
@@ -79,14 +102,36 @@
 		1DA43F111FBDC2DE0032D7C7 /* EasyDIKitTests */ = {
 			isa = PBXGroup;
 			children = (
+				1DA231EC1FC2DC5100A0594F /* DIMethodTests.m */,
+				1DB445991FBEF83E00C93EC5 /* Categories */,
 				1DBE070C1FBDC47E00517F67 /* Support Files */,
 			);
 			path = EasyDIKitTests;
 			sourceTree = "<group>";
 		};
+		1DB4458F1FBEF27F00C93EC5 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				1DB445901FBEF2B200C93EC5 /* NSException+Additional.h */,
+				1DB445911FBEF2B200C93EC5 /* NSException+Additional.m */,
+				1DB445951FBEF83600C93EC5 /* NSInvocation+Additional.h */,
+				1DB445961FBEF83600C93EC5 /* NSInvocation+Additional.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		1DB445991FBEF83E00C93EC5 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				1DB4459A1FBEF87100C93EC5 /* NSInvocation+AdditionalTests.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
 		1DBE070B1FBDC47900517F67 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
+				1DB445941FBEF5B000C93EC5 /* EasyDIKit.pch */,
 				1DA43F081FBDC2DE0032D7C7 /* Info.plist */,
 			);
 			path = "Support Files";
@@ -107,7 +152,11 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1DB445921FBEF2B200C93EC5 /* NSException+Additional.h in Headers */,
+				1DA231E81FC2D7D100A0594F /* DIMethod.h in Headers */,
 				1DA43F151FBDC2DE0032D7C7 /* EasyDIKit.h in Headers */,
+				1DB445971FBEF83600C93EC5 /* NSInvocation+Additional.h in Headers */,
+				1DA231EB1FC2D98300A0594F /* DIMethod+Private.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -210,6 +259,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1DA231E91FC2D7D100A0594F /* DIMethod.m in Sources */,
+				1DB445931FBEF2B200C93EC5 /* NSException+Additional.m in Sources */,
+				1DB445981FBEF83600C93EC5 /* NSInvocation+Additional.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -217,6 +269,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1DB4459B1FBEF87100C93EC5 /* NSInvocation+AdditionalTests.m in Sources */,
+				1DA231ED1FC2DC5100A0594F /* DIMethodTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,6 +324,8 @@
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "EasyDIKit/Support Files/EasyDIKit.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -327,6 +383,8 @@
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "EasyDIKit/Support Files/EasyDIKit.pch";
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
