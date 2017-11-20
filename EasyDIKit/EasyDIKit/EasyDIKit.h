@@ -6,9 +6,11 @@
 //  Copyright © 2017 Aleksey Zgurskiy. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
 
 FOUNDATION_EXPORT double EasyDIKitVersionNumber;
 FOUNDATION_EXPORT const unsigned char EasyDIKitVersionString[];
+
+#import <EasyDIKit/DIInitializer.h>
 
 #import <EasyDIKit/DIMethod.h>
