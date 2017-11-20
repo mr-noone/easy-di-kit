@@ -43,10 +43,12 @@
         }
     }
     
-    void *returnValue;
-    
     [invocation invoke];
-    [invocation getReturnValue:&returnValue];
+    
+    void *returnValue = nil;
+    if ([signature methodReturnLength] > 0) {
+        [invocation getReturnValue:&returnValue];
+    }
     
     return (__bridge id)returnValue;
 }

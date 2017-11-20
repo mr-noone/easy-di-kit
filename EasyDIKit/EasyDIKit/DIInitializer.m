@@ -54,6 +54,8 @@
     [self.method injectParameter:parameter];
 }
 
+#pragma mark - Private
+
 - (id)perform {
     return [self.method perform];
 }

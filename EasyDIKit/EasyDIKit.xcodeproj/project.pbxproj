@@ -12,6 +12,10 @@
 		1DA231EB1FC2D98300A0594F /* DIMethod+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 1DA231EA1FC2D98300A0594F /* DIMethod+Private.h */; };
 		1DA231ED1FC2DC5100A0594F /* DIMethodTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DA231EC1FC2DC5100A0594F /* DIMethodTests.m */; };
 		1DA231EF1FC307F200A0594F /* DIInitializer+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 1DA231EE1FC307F200A0594F /* DIInitializer+Private.h */; };
+		1DA231F21FC30BDD00A0594F /* DIInjection.h in Headers */ = {isa = PBXBuildFile; fileRef = 1DA231F01FC30BDD00A0594F /* DIInjection.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1DA231F31FC30BDD00A0594F /* DIInjection.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DA231F11FC30BDD00A0594F /* DIInjection.m */; };
+		1DA231F51FC30BF600A0594F /* DIInjection+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 1DA231F41FC30BF600A0594F /* DIInjection+Private.h */; };
+		1DA231F71FC30DE800A0594F /* DIInjectionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DA231F61FC30DE800A0594F /* DIInjectionTests.m */; };
 		1DA43F0E1FBDC2DE0032D7C7 /* EasyDIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DA43F041FBDC2DE0032D7C7 /* EasyDIKit.framework */; };
 		1DA43F151FBDC2DE0032D7C7 /* EasyDIKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 1DA43F071FBDC2DE0032D7C7 /* EasyDIKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1DB445921FBEF2B200C93EC5 /* NSException+Additional.h in Headers */ = {isa = PBXBuildFile; fileRef = 1DB445901FBEF2B200C93EC5 /* NSException+Additional.h */; };
@@ -40,6 +44,10 @@
 		1DA231EA1FC2D98300A0594F /* DIMethod+Private.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DIMethod+Private.h"; sourceTree = "<group>"; };
 		1DA231EC1FC2DC5100A0594F /* DIMethodTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DIMethodTests.m; sourceTree = "<group>"; };
 		1DA231EE1FC307F200A0594F /* DIInitializer+Private.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DIInitializer+Private.h"; sourceTree = "<group>"; };
+		1DA231F01FC30BDD00A0594F /* DIInjection.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DIInjection.h; sourceTree = "<group>"; };
+		1DA231F11FC30BDD00A0594F /* DIInjection.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DIInjection.m; sourceTree = "<group>"; };
+		1DA231F41FC30BF600A0594F /* DIInjection+Private.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DIInjection+Private.h"; sourceTree = "<group>"; };
+		1DA231F61FC30DE800A0594F /* DIInjectionTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DIInjectionTests.m; sourceTree = "<group>"; };
 		1DA43F041FBDC2DE0032D7C7 /* EasyDIKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = EasyDIKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DA43F071FBDC2DE0032D7C7 /* EasyDIKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EasyDIKit.h; sourceTree = "<group>"; };
 		1DA43F081FBDC2DE0032D7C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -101,6 +109,9 @@
 				1DA231EE1FC307F200A0594F /* DIInitializer+Private.h */,
 				1DBE071D1FBDD7E800517F67 /* DIInitializer.h */,
 				1DBE071E1FBDD7E800517F67 /* DIInitializer.m */,
+				1DA231F41FC30BF600A0594F /* DIInjection+Private.h */,
+				1DA231F01FC30BDD00A0594F /* DIInjection.h */,
+				1DA231F11FC30BDD00A0594F /* DIInjection.m */,
 				1DA231EA1FC2D98300A0594F /* DIMethod+Private.h */,
 				1DA231E61FC2D7D100A0594F /* DIMethod.h */,
 				1DA231E71FC2D7D100A0594F /* DIMethod.m */,
@@ -114,6 +125,7 @@
 			isa = PBXGroup;
 			children = (
 				1DBE07211FBDD80500517F67 /* DIInitializerTests.m */,
+				1DA231F61FC30DE800A0594F /* DIInjectionTests.m */,
 				1DA231EC1FC2DC5100A0594F /* DIMethodTests.m */,
 				1DB445991FBEF83E00C93EC5 /* Categories */,
 				1DBE070C1FBDC47E00517F67 /* Support Files */,
@@ -171,6 +183,8 @@
 				1DBE071F1FBDD7E800517F67 /* DIInitializer.h in Headers */,
 				1DB445971FBEF83600C93EC5 /* NSInvocation+Additional.h in Headers */,
 				1DA231EB1FC2D98300A0594F /* DIMethod+Private.h in Headers */,
+				1DA231F21FC30BDD00A0594F /* DIInjection.h in Headers */,
+				1DA231F51FC30BF600A0594F /* DIInjection+Private.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,6 +288,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1DBE07201FBDD7E800517F67 /* DIInitializer.m in Sources */,
+				1DA231F31FC30BDD00A0594F /* DIInjection.m in Sources */,
 				1DA231E91FC2D7D100A0594F /* DIMethod.m in Sources */,
 				1DB445931FBEF2B200C93EC5 /* NSException+Additional.m in Sources */,
 				1DB445981FBEF83600C93EC5 /* NSInvocation+Additional.m in Sources */,
@@ -285,6 +300,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1DBE07221FBDD80500517F67 /* DIInitializerTests.m in Sources */,
+				1DA231F71FC30DE800A0594F /* DIInjectionTests.m in Sources */,
 				1DB4459B1FBEF87100C93EC5 /* NSInvocation+AdditionalTests.m in Sources */,
 				1DA231ED1FC2DC5100A0594F /* DIMethodTests.m in Sources */,
 			);
