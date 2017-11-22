@@ -52,7 +52,6 @@
             NSString *propertyName = [NSString stringWithUTF8String:property_getName(property)];
             [injection injectProperty:NSSelectorFromString(propertyName) with:[class assembly]];
         }
-        
     }
     
     free(properties);
