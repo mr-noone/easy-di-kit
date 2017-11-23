@@ -14,6 +14,7 @@
 		1D5CBE501FC4605D009973C7 /* NSObject+Introspection.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D5CBE4E1FC4605D009973C7 /* NSObject+Introspection.h */; };
 		1D5CBE511FC4605D009973C7 /* NSObject+Introspection.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D5CBE4F1FC4605D009973C7 /* NSObject+Introspection.m */; };
 		1D5CBE531FC4627B009973C7 /* NSObject+IntrospectionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D5CBE521FC4627B009973C7 /* NSObject+IntrospectionTests.m */; };
+		1D5CBE5C1FCC2284009973C7 /* EasyDIKit.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 1D5CBE5B1FCC2284009973C7 /* EasyDIKit.podspec */; };
 		1DA231E81FC2D7D100A0594F /* DIMethod.h in Headers */ = {isa = PBXBuildFile; fileRef = 1DA231E61FC2D7D100A0594F /* DIMethod.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1DA231E91FC2D7D100A0594F /* DIMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DA231E71FC2D7D100A0594F /* DIMethod.m */; };
 		1DA231EB1FC2D98300A0594F /* DIMethod+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 1DA231EA1FC2D98300A0594F /* DIMethod+Private.h */; };
@@ -58,6 +59,7 @@
 		1D5CBE4F1FC4605D009973C7 /* NSObject+Introspection.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Introspection.m"; sourceTree = "<group>"; };
 		1D5CBE521FC4627B009973C7 /* NSObject+IntrospectionTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+IntrospectionTests.m"; sourceTree = "<group>"; };
 		1D5CBE561FC6D0C5009973C7 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../../../README.md; sourceTree = "<group>"; };
+		1D5CBE5B1FCC2284009973C7 /* EasyDIKit.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = EasyDIKit.podspec; path = ../../../EasyDIKit.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		1DA231E61FC2D7D100A0594F /* DIMethod.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DIMethod.h; sourceTree = "<group>"; };
 		1DA231E71FC2D7D100A0594F /* DIMethod.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DIMethod.m; sourceTree = "<group>"; };
 		1DA231EA1FC2D98300A0594F /* DIMethod+Private.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DIMethod+Private.h"; sourceTree = "<group>"; };
@@ -196,6 +198,7 @@
 		1DBE070B1FBDC47900517F67 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
+				1D5CBE5B1FCC2284009973C7 /* EasyDIKit.podspec */,
 				1D5CBE561FC6D0C5009973C7 /* README.md */,
 				1DB445941FBEF5B000C93EC5 /* EasyDIKit.pch */,
 				1DA43F081FBDC2DE0032D7C7 /* Info.plist */,
@@ -315,6 +318,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D5CBE5C1FCC2284009973C7 /* EasyDIKit.podspec in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
