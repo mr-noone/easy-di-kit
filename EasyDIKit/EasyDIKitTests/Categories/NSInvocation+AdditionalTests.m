@@ -11,19 +11,19 @@
 
 @interface InvokationTestObject : NSObject
 
-@property NSString *param1;
-@property NSString *param2;
+@property BOOL param1;
+@property uint param2;
 @property NSString *param3;
 
-- (instancetype)initWithParam1:(NSString *)param1
-                        param2:(NSString *)param2
+- (instancetype)initWithParam1:(BOOL)param1
+                        param2:(uint)param2
                         param3:(NSString *)param3;
 
 @end
 
 @implementation InvokationTestObject
 
-- (instancetype)initWithParam1:(NSString *)param1 param2:(NSString *)param2 param3:(NSString *)param3 {
+- (instancetype)initWithParam1:(BOOL)param1 param2:(uint)param2 param3:(NSString *)param3 {
     self = [self init];
     self.param1 = param1;
     self.param2 = param2;
@@ -74,17 +74,17 @@
 }
 
 - (void)testInvokeWithParameters {
-    NSString *param1 = @"str1";
-    NSString *param2 = @"str2";
-    NSString *param3 = @"str3";
+    BOOL param1 = YES;
+    uint param2 = 34;
+    NSString *param3 = @"str";
     
     InvokationTestObject *obj = [NSInvocation invokeWithTarget:[InvokationTestObject alloc]
                                                       selector:@selector(initWithParam1:param2:param3:)
-                                                    parameters:@[param1, param2, param3]];
+                                                    parameters:@[@(param1), @(param2), param3]];
     
     XCTAssertNotNil(obj);
-    XCTAssertEqualObjects(obj.param1, param1);
-    XCTAssertEqualObjects(obj.param2, param2);
+    XCTAssertEqual(obj.param1, param1);
+    XCTAssertEqual(obj.param2, param2);
     XCTAssertEqualObjects(obj.param3, param3);
 }
 
@@ -94,8 +94,8 @@
                                                     parameters:@[NSNull.null, NSNull.null, NSNull.null]];
     
     XCTAssertNotNil(obj);
-    XCTAssertNil(obj.param1);
-    XCTAssertNil(obj.param2);
+    XCTAssertEqual(obj.param1, NO);
+    XCTAssertEqual(obj.param2, 0);
     XCTAssertNil(obj.param3);
 }
 
