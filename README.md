@@ -51,9 +51,11 @@ Create objects using your own initializers with `DIFactoryInitializer` block.
 
 - (Person *)commonPerson {
     DIFactoryInitializer initializer = ^(DIInitializer *initializer) {
-        [initializer setSelector:@selector(initWithFirstName:lastName)];
+        [initializer setSelector:@selector(initWithFirstName:lastName:age:)];
         [initializer injectParameter:@"John"];
         [initializer injectParameter:@"Smith"];
+        // To inject a primitive, wrap it into 'NSNumber' or 'NSValue'
+        [initializer injectParameter:@21];
     };
     
     return [DIFactory instanceOfClass:Person.class
@@ -73,6 +75,8 @@ Inject properties using `DIFactoryInjections` block.
     DIFactoryInjections injections = ^(DIInjection *injections) {
         [injections injectProperty:@selector(firstName) with:@"John"];
         [injections injectProperty:@selector(lastName) with:@"Smith"];
+        // To inject a primitive, wrap it into 'NSNumber' or 'NSValue'
+        [injections injectProperty:@selector(age) with:@21];
     };
     
     return [DIFactory instanceOfClass:Person.class
@@ -109,8 +113,7 @@ Inject method using `DIFactoryInjections` block.
 Obtain objects as follows:
 
 ```objective-c
-SomeAssembly *commonAssembly = [SomeAssembly assembly];
-Person *person = [commonAssembly commonPerson];
+Person *person = [SomeAssembly.assembly commonPerson];
 ```
 
 Property injects automatically if it is subclassed form `DIAssembly`.

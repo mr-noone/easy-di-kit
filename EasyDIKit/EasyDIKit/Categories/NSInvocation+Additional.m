@@ -38,7 +38,16 @@
     
     for (int i = 0; i < parameters.count; i++) {
         id param = parameters[i];
-        if ([param isKindOfClass:NSNull.class] == NO) {
+        
+        const char *type = [signature getArgumentTypeAtIndex:i + 2];
+        
+        if ([param isKindOfClass:NSNull.class]) {
+            continue;
+        } else if ([param isKindOfClass:NSValue.class] && strcmp(type, "@") != 0) {
+            void *value = nil;
+            [param getValue:&value];
+            [invocation setArgument:&value atIndex:i + 2];
+        } else {
             [invocation setArgument:&param atIndex:i + 2];
         }
     }
