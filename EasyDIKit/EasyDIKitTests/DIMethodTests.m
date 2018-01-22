@@ -9,6 +9,24 @@
 #import <XCTest/XCTest.h>
 #import "DIMethod+Private.h"
 
+@interface MethodTestObject : NSObject
+
+@property (strong, nonatomic) NSString *param;
+
++ (instancetype)objectWithParam:(NSString *)param;
+
+@end
+
+@implementation MethodTestObject
+
++ (instancetype)objectWithParam:(NSString *)param {
+    MethodTestObject *obj = [self new];
+    obj->_param = param;
+    return obj;
+}
+
+@end
+
 @interface DIMethod (UnitTests)
 
 @property (strong, nonatomic) NSMutableArray *parameters;
@@ -57,8 +75,13 @@
 }
 
 - (void)testPerform {
-    DIMethod *method  = [[DIMethod alloc] initWithTarget:NSObject.class selector:@selector(new)];
-    XCTAssertNotNil([method perform]);
+    NSString *param = @"param";
+    
+    DIMethod *method = [[DIMethod alloc] initWithTarget:MethodTestObject.class selector:@selector(objectWithParam:)];
+    [method injectParameter:param];
+    MethodTestObject *obj = [method perform];
+    
+    XCTAssertEqualObjects(obj.param, param);
 }
 
 @end
